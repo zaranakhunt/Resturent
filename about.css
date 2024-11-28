@@ -1,0 +1,147 @@
+*{
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+}
+.container{
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    height: 100%;
+    overflow: hidden;
+}
+
+#menu{
+    background-color: whitesmoke;
+}
+
+.brand-logo img{
+    width: 100%;
+}
+
+.menu-item a{
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 8px 30px;
+    margin: 10px 0;
+    color: rgb(128, 129, 129);
+    font-weight: 300;
+}
+
+#about-food{
+    background-color: whitesmoke;
+    overflow: scroll;
+    overflow-x: hidden;
+    box-sizing: content-box;
+}
+
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    position: sticky;
+    top: 0;
+    background: whitesmoke;
+    z-index: 1;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+#header .address{
+    font-size: 20px;
+}
+
+.your-address{
+    border: 1px solid indianred;
+    color: indianred;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 150px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.add-box i{
+    font-size: 20px;
+}
+
+.util i,.user i{
+    font-size: 18px;
+    margin: 0 10px;
+    border: 1px solid crimson;
+    padding: 8px 16px;
+    color: crimson;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.util i:active,.user i:active{
+    color: white;
+    background-color: crimson;
+}
+
+#logo .container{
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    height: 100%;
+    overflow: hidden;
+}
+
+#logo .container img{
+    width: 100%;
+}
+
+#logo .container p{
+    font-size: 18px;
+    padding: 8px 30px;
+    margin: 10px 0;
+}
+
+#restaurant .container{
+    display: grid;
+    grid-template-columns: 1fr 550px;
+    height: 100%;
+    overflow: hidden;
+}
+
+#restaurant .container img{
+    width: 100%;
+    padding-top: 10px;
+}
+
+#restaurant .container p{
+    font-size: 18px;
+    padding: 8px 30px;
+    margin: 10px 0;
+}
+
+#chef .container{
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    height: 100%;
+    overflow: hidden;
+}
+
+#chef .container img{
+    width: 100%;
+    padding-top: 10px;
+}
+
+#chef .container p{
+    font-size: 18px;
+    padding: 8px 30px;
+    margin: 10px 0;
+}

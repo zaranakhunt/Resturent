@@ -1,0 +1,183 @@
+/* mobile design */
+
+@media screen and (max-width: 800px){
+    #container{
+        display: none;
+    }
+    #mobile-view{
+        display: grid;
+        grid-template-rows:120px 1fr 50px;
+        height: 100%;
+        overflow: hidden;
+        width: 100%;
+    }
+    .mobile-top{
+        padding: 5px 15px;
+        z-index: 1;
+        background: white;
+    }
+    .item-container{
+        overflow-y: scroll;
+    }
+    .logo-box,.top-menu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo-box img{
+        width: 90px;
+        height: 70px;
+    }
+    .top-menu{
+        color: indianred;
+    }
+    .top-menu i{
+        font-size: 20px;
+        cursor: pointer;
+        padding: 12px 5px;
+        border-radius: 50%;
+    }
+    .m-cart-toggle{
+        color: white;
+        background-color: lightcoral;
+    }
+    #category-header{
+        display: flex;
+        width: 100%;
+        overflow-x: scroll;
+        position: sticky;
+        top: 0;
+        background: white;
+        z-index: 1;
+        border-bottom: 1px solid rgb(219, 219, 219);
+        margin: 0;
+    }
+    .toggle-category{
+        display: none;
+        position: relative;
+    }
+    .list-card{
+        margin: 0 10px;
+        text-align: center;
+    }
+    .list-card img{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+    }
+    .list-card:hover{
+        background: none;
+        transform: none;
+    }
+    .list-card:hover img{
+        transform: none;
+        transition: none;
+    }
+    .list-name{
+        margin: 5px 0;
+        color: coral;
+        width: max-content;
+        font-size: 16px;
+    }
+    #food-items{
+        padding: 5px 10px;
+    }
+    .mobile-footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 15px;
+        background:white;
+        border-top: 1px solid rgb(219, 219, 219);
+    }
+    .mobile-footer a{
+        color: indianred;
+        text-decoration: none;
+        font-size: 20px;
+        position: sticky;
+        bottom: 0;
+    }
+    #category-name{
+        font-size: 25px;
+    }
+    #item-card{
+        width: 170px;
+        height: 200px;
+    }
+    #item-card img{
+        width: 100px;
+        height: 100px;
+        margin-bottom: 0px;
+    }
+
+    #item-card:hover img{
+        transform: none;
+    }
+
+    #item-name,#item-price{
+        font-size: 15px;
+    }
+    .list-card{
+        flex-direction: column;
+    }
+    #cart-page{
+        margin: 3px 0;
+        padding: 10px 5px;
+        padding-bottom: 30px;
+        border-top: 1px solid rgb(219, 219, 219);
+    }
+    #cart-page table thead td{
+        font-size: 20px;
+    }
+    #cart-page table tbody td{
+        font-size: 18px;
+    }
+    #cart-page table tbody img{
+        width: 60px;
+        height: 60px;
+    }
+    #cart-title{
+        font-size: 25px;
+        display: inline-block;
+    }
+    #m-total-amount{
+        display: inline-block;
+        color: lightcoral;
+        padding: 5px 10px;
+        margin: 0;
+        border: 1px solid lightcoral;
+        float: right;
+    }
+    .cart-btn{
+        font-size: 14px;
+        background: lightcoral;
+        padding: 8px 15px;
+        margin: auto;
+    }
+    .btn-box{
+        text-align: center;
+    }
+    #Kathiyawadi{
+        margin-top: 10px;
+    }
+}
+
+@media screen  and (max-width:380px){
+    #item-card{
+        height: 210px;
+        width: 140px;
+    }
+    #food-items{
+        padding: 0;
+    }
+}
+
+@media screen  and (max-width:360px){
+    #item-card{
+        height: 210px;
+        width: 160px;
+    }
+    #food-items{
+        padding: 0;
+    }
+}
